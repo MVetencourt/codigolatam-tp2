@@ -73,9 +73,6 @@ ul#menu-principal {
     border-radius: 50%;
     width: 100%;
     max-width: 400px;
-    border-color: #59AF80;
-    border-width: 5px;
-    border-style: solid;
 }
 
 #inicio {
@@ -100,7 +97,7 @@ main {
     font-size: 30px;
     /*48px*/
     text-align: center;
-    color: #FDE0FF;
+    color: white;
 }
 
 p {
