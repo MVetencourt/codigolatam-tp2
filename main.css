@@ -29,7 +29,23 @@ main {
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #cd9fb2;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .logo {
@@ -81,13 +97,15 @@ ul#menu-principal {
     /*row*/
     width: 100%;
     padding: 20px;
-    height: auto; /*<-- extra*/
+    height: auto;
+    /*<-- extra*/
     min-height: 100vh;
 }
 
 main {
     padding-top: 100px;
-    padding-bottom: 100px; /*200px*/
+    padding-bottom: 100px;
+    /*200px*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,15 +115,15 @@ main {
     font-size: 30px;
     /*48px*/
     text-align: center;
-    color:  #a2717d;
-    text-shadow: 0 0 5 px #5f5f5f ;
+    color: #ffffff;
+    text-shadow: 0 0 5 px #5f5f5f;
 }
 
 p {
     font-size: 18px;
     line-height: 1.2;
     text-align: justify;
-    color:  #604948;
+    color: #ffffff
 }
 
 #inicio button {
@@ -132,7 +150,7 @@ footer {
 }
 
 #hablemos {
-    background-color: rgba(175, 89, 158, 0.3);
+    background-color: #ffffff;
     border-radius: 10px;
     width: 90%;
     /*50%*/
@@ -141,6 +159,10 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
+#segundo-parrafo {
+    color: black;
+  }
 
 #listado-iconos li {
     display: inline-block;
@@ -156,7 +178,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto; /* <-- nuevo*/
+    height: auto;
+    /* <-- nuevo*/
 }
 
 #listado-iconos img {
@@ -164,7 +187,7 @@ footer {
     /*100px*/
     padding: 10px;
     border-radius: 5px;
-     
+
 }
 
 /* desktop */
@@ -178,32 +201,33 @@ footer {
 
     main {
         padding-bottom: 200px;
-   }
+    }
+
     #foto-personal {
         height: 400px;
         width: 400px;
     }
 
     #texto1 {
-    padding: 70px; 
-}
+        padding: 70px;
+    }
 
-#inicio h1 {
-    font-size: 48px;
-    text-align: left;   
-}
+    #inicio h1 {
+        font-size: 48px;
+        text-align: left;
+    }
 
-#hablemos {
-       width: 50%;
-}
+    #hablemos {
+        width: 50%;
+    }
 
-#listado-iconos li {
-    padding: 40px;
-}
+    #listado-iconos li {
+        padding: 40px;
+    }
 
-#listado-iconos img {
-    width: 100px;
-   
-}
+    #listado-iconos img {
+        width: 100px;
+
+    }
 
 }
