@@ -98,6 +98,7 @@ main {
     /*48px*/
     text-align: center;
     color: white;
+    text-shadow: 0 0 5px #5f5f5f ;
 }
 
 p {
