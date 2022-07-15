@@ -29,7 +29,7 @@ main {
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #f2e6ea;
+    background-color: #cd9fb2;
 }
 
 .logo {
@@ -46,7 +46,7 @@ header {
     position: fixed;
     top: 0;
     padding: 10px;
-    background-color: #CD9FB2;
+    background-color: #f3d4cb;
     box-shadow: 0 3px 10px -5px #5f5f5f;
 }
 
@@ -105,11 +105,12 @@ p {
     font-size: 18px;
     line-height: 1.2;
     text-align: justify;
+    color:  #604948;
 }
 
 #inicio button {
     font-size: 20px;
-    background-color: #af599e;
+    background-color: #a2717d;
     color: #fbfbfb;
     border-radius: 25px;
     padding: 12px;
