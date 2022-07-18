@@ -86,6 +86,62 @@ ul#menu-principal {
     background-color: rgba(175, 89, 158, 0.3);
 }
 
+#menu-button {
+    background: transparent;
+    border:0;
+    outline: 0;
+    width: 40px;
+    height: 40px;
+}
+
+#menu-button img {
+    -webkit-filter: invert(100%);
+}
+
+#close-menu {
+    display: none;
+}
+
+body.mobile-menu-active img#close-menu {
+    display: block;
+}
+
+body.mobile-menu-active img#open-menu {
+    display: none;
+}
+
+body.mobile-menu-active header {
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    transition: height 0.3s;
+}
+
+body.mobile-menu-active nav {
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+
+body.mobile-menu-active ul#menu-principal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100% ;
+}
+
+body.mobile-menu-active {
+    overflow: hidden;
+}
+
+body.mobile-menu-active main {
+    display: none;
+}
+
+body.mobile-menu-active footer {
+    display: none;
+}
+
 #foto-personal {
     border-radius: 50%;
     width: 100%;
@@ -109,7 +165,7 @@ ul#menu-principal {
     border: 0;
     height: 3px;
     background-color: white;
-  }
+}
 
 main {
     padding-top: 100px;
@@ -126,7 +182,7 @@ main {
     text-align: center;
     color: #ffffff;
     text-shadow: 2px 3px 8px #202020;
-    }
+}
 
 p {
     font-size: 18px;
@@ -140,12 +196,18 @@ p {
     background-color: transparent;
     color: white;
     border-radius: 25px;
-    border:  2px solid white;
+    border: 2px solid white;
     padding: 12px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-
 }
 
+#inicio button:active {
+    background-color: #ff00aa88;
+}
+
+nav {
+    display: none;
+}
 
 footer {
     height: 90px;
@@ -172,7 +234,7 @@ footer {
 
 #segundo-parrafo {
     color: black
-  }
+}
 
 #listado-iconos li {
     display: inline-block;
@@ -202,6 +264,29 @@ footer {
 
 /* desktop */
 @media (min-width: 1024px) {
+
+    #menu-button {
+        display: none;
+    }
+
+     nav {
+        display: block ;
+    }
+
+    body.mobile-menu-active header {
+        height: 90px;
+        align-items: center;
+    }
+
+    body.mobile-menu-active nav {
+        height: auto;
+        width: auto;
+    }
+
+    body.mobile-menu-active ul#menu-principal {
+        flex-direction: row;
+    }
+
     #inicio {
         display: flex;
         flex-direction: row;
