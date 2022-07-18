@@ -65,6 +65,7 @@ header {
     background-color: black;
     color: white;
     box-shadow: 0 3px 10px -5px #5f5f5f;
+    padding-right: 20px;
 }
 
 section {
@@ -128,6 +129,7 @@ body.mobile-menu-active ul#menu-principal {
     align-items: center;
     justify-content: space-around;
     height: 100% ;
+    font-size: 30px;
 }
 
 body.mobile-menu-active {
