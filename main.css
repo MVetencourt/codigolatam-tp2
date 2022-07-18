@@ -154,11 +154,9 @@ body.mobile-menu-active footer {
 #inicio {
     display: flex;
     flex-direction: column;
-    /*row*/
     width: 100%;
     padding: 20px;
     height: auto;
-    /*<-- extra*/
     min-height: 100vh;
     padding-bottom: 90px;
 }
@@ -172,7 +170,6 @@ body.mobile-menu-active footer {
 main {
     padding-top: 100px;
     padding-bottom: 100px;
-    /*200px*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,7 +177,6 @@ main {
 
 #inicio h1 {
     font-size: 30px;
-    /*48px*/
     text-align: center;
     color: #ffffff;
     text-shadow: 2px 3px 8px #202020;
@@ -227,7 +223,6 @@ footer {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     width: 90%;
-    /*50%*/
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -241,7 +236,6 @@ footer {
 #listado-iconos li {
     display: inline-block;
     padding: 10px;
-    /*40px*/
 }
 
 #listado-iconos img:hover {
@@ -253,12 +247,10 @@ footer {
     flex-direction: column;
     align-items: center;
     height: auto;
-    /* <-- nuevo*/
 }
 
 #listado-iconos img {
     width: 70px;
-    /*100px*/
     padding: 10px;
     border-radius: 5px;
     -webkit-filter: invert(100%);
